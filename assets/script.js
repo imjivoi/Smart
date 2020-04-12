@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
 //////menu-burger//////
 
 menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("menu-hide");
+  menu.classList.toggle("menu-active");
   menuBurg.classList.toggle("open");
 });
 
@@ -85,19 +85,6 @@ function nextSlide() {
 
 function previousSlide() {
   if (windowWidth < 1000) {
-    for (let i = 0; i < slide.length - 1; i--) {
-      if (currentSlide === slide[i]) {
-      } else {
-        slide[currentSlide].classList.remove("slide-active");
-        slide[currentSlide].classList.add("slide-hide");
-        slide[currentSlide - 1].classList.add("slide-active");
-        slide[currentSlide - 1].classList.remove("slide-hide");
-      }
-    }
-    if (currentSlide === slide[i]) {
-    } else {
-      currentSlide--;
-    }
   } else {
     for (let i = slide.length - 1; i > 0; i--) {
       slide[i].classList.remove("slide-active");
