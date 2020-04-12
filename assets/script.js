@@ -85,6 +85,17 @@ function nextSlide() {
 
 function previousSlide() {
   if (windowWidth < 1000) {
+    for (let i = slide.length - 1; i > 0; i--) {
+      if (currentSlide !== 0) {
+        slide[currentSlide].classList.remove("slide-active");
+        slide[currentSlide].classList.add("slide-hide");
+        slide[currentSlide - 1].classList.add("slide-active");
+        slide[currentSlide - 1].classList.remove("slide-hide");
+      }
+    }
+    if (currentSlide !== 0) {
+      currentSlide--;
+    }
   } else {
     for (let i = slide.length - 1; i > 0; i--) {
       slide[i].classList.remove("slide-active");

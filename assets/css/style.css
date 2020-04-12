@@ -1160,4 +1160,14 @@ footer {
   .cards-card-four {
     margin: 3% auto;
   }
+
+  .logos-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 660px) {
+  .slider-content {
+    padding: 0;
+  }
 }
