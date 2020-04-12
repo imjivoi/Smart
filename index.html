@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Pacifico&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -19,18 +20,30 @@
       <div class="wrapper">
         <div class="header-top">
           <h1>Smart</h1>
-          <div class="menu-btn">
-            <div id="hamburger">
+          <div id="menu-btn">
+            <div class="hamburger">
               <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div id="cross">
               <span></span>
               <span></span>
             </div>
           </div>
         </div>
+        <div class="header__menu menu-hide">
+          <ul class="header__list">
+            <li><a href="" class="header__link">Home</a></li>
+            <li><a href="" class="header__link">Working</a></li>
+            <li><a href="" class="header__link">Featured</a></li>
+            <li><a href="" class="header__link">Services</a></li>
+            <li><a href="" class="header__link">Team</a></li>
+            <li><a href="" class="header__link">Clients</a></li>
+            <li><a href="" class="header__link">Logos</a></li>
+            <li><a href="" class="header__link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="smart">
+      <div class="wrapper">
         <div class="title">
           <h2><span>Smart</span> Agency Landign Page</h2>
           <p>
@@ -40,7 +53,7 @@
             aspernatur dolorum at!
           </p>
         </div>
-        <div class="subscribe">
+        <div class="subscribe" id="subscribe">
           <div class="subscribe-title"><span>Send</span> A Message</div>
           <form action="">
             <input type="text" placeholder="Your Name" />
@@ -56,7 +69,7 @@
           </form>
         </div>
       </div>
-    </header>
+    </section>
     <section class="working-process">
       <div class="wrapper">
         <div class="working-process-title">
@@ -528,7 +541,18 @@
     <footer>
       <div class="wrapper">
         <div class="footer-content">
-          <button>Contact Us</button>
+          <button><a href="#subscribe">Contact Us</a></button>
+          <div class="footer-social">
+            <div class="footer-social__icons">
+              <span><img src="assets/images/footer-icon-fb.png" alt="" /></span>
+              <span><img src="assets/images/footer-icon-tw.png" alt="" /></span>
+              <span
+                ><img src="assets/images/footer-icon-unknown.png" alt=""
+              /></span>
+              <span><img src="assets/images/footer-icon-be.png" alt="" /></span>
+            </div>
+            <div class="footer-copyright">© 2015 - 2016 Deviserweb Ltd.</div>
+          </div>
         </div>
       </div>
     </footer>
