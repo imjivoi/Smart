@@ -1167,7 +1167,49 @@ footer {
 }
 
 @media (max-width: 660px) {
+  header {
+    width: 100%;
+  }
+
+  .menu-active {
+    width: 100%;
+  }
+
+  .subscribe {
+    width: 100%;
+  }
+  .services-content {
+    display: block;
+  }
+  .services-icon-content {
+    width: 104px;
+    height: 92px;
+  }
+  .services-icons {
+    width: 40%;
+    height: 100%;
+  }
+  .services-description {
+    width: 100%;
+    margin: 10% 0;
+  }
+  .services-description p {
+    width: 100%;
+    margin: 0;
+  }
+  .services-description button {
+    margin: 0;
+    width: 100%;
+  }
   .slider-content {
     padding: 0;
+  }
+
+  .team-cards {
+    padding: 0 0;
+  }
+
+  .team-cards-item {
+    width: 100%;
   }
 }
